@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
+    <title>VerbConjugation</title>
+</head>
+<body>
+    <div class="titleContainer">
+        <h1>Verb Conjugations</h1>
+        <button class="choice" onclick="conj()">conjugate</button>
+        <button class="choice" onclick="formVerb()">form</button>
+    </div>
+    <div class="container">
+        <h3 id="display">Click one of the buttons above to get started :-)</h3>
+        <label for="answer" id="instrcts"></label>
+        <br>
+        <br>
+        <input type="text" id="answer" name="anwer" class="answer" autocomplete="off">
+        <br>
+        <br>
+        <button onclick="check()" id="check" class="check">check</button>
+        <h4 id="correct"></h4>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
